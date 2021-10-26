@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public void LoadStartScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void LoadFirstLevel()
     {
         SceneManager.LoadScene(1);
-        Debug.Log("Clicked.");
     }
     
     // Start is called before the first frame update
